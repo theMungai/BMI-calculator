@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --heading: #273447;
+    --welcome-background: #335ff6;
+    --top-paragraph: #68777f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: "Poppins";
+}
+
+.main-container{
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.logo img{
+    width: 60px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.body-mass-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0px;
+
+}
+
+.header{
+    width: 40%;
+    margin-top: 60px;
+}
+
+.header h1{
+    color: var(--heading);
+    font-size: 3rem;
+    width: 75%;
+    line-height: 3.6rem;
+}
+
+.header p {
+    color: var(--top-paragraph);
+}
+
+.user-details {
+    width: 50%
+}
+
+.user-details h3 {
+    color: var(--heading);
+    padding: 20px 0px;
+}
+
+.radio label{
+    padding: 0px 15px;
+}
+
+.client-metrics{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-metrics label{
+    display: block;
+    color: var(--top-paragraph);
+    font-size: 1.1rem;
+    padding: 15px 0px;
+}
+
+.client-metrics input{
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-color: var(--top-paragraph);
+    border-width: 0.5px;
+    color: var(--welcome-background);
+}
+
+.client-metrics input:focus{
+    border-color: var(--welcome-background);
+    outline: 0.5px solid var(--welcome-background);
+}
+
+.client-metrics span{
+    color: var(--welcome-background);
+    font-weight: 700;
+}
+
+.calculate-BMI{
+    width: 80%;
+}
+
+.calculate-BMI button{
+    background-color: var(--welcome-background);
+    margin: 20px 0;
+    padding: 10px 8px;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: "Poppins";
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.calculate-BMI button:active{
+    transform: scale(1.1);
+}
+
+.client-results{
+    width: 80%;
+    background-color: var(--welcome-background);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px 60px 60px 10px;
+}
+
+.client-results h3{
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.client-results p {
+    font-size: 0.9rem;
+}
+
+.second-lower{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 80px 0px;
+    padding: 20px 0px;
+}
+
+.second-lower .image {
+    width: 40%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.what-your-result-means{
+    width: 50%;
+}
+
+.what-your-result-means h2{
+    color: var(--heading);
+    padding: 10px 0px;
+}
+
+.what-your-result-means p{
+    color: var(--top-paragraph);
+    line-height: 1.7rem;
+}
+
+.healthy-tips-grid h3,h1{
+    color: var(--heading);
+    padding-bottom: 20px;
+}
+
+.healthy-tips-grid{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.healthy-tips-grid p{
+    color: var(--top-paragraph);
+}
+
+.healthy-tips{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+
+.limitations-of-BMI{
+    margin-top: 200px;
+    display: flex;
+    gap: 6rem;
+}
+
+.gender{
+    width: 30%;
+}
+
+.BMI-limitations{
+    width: 60%;
+}
+
+.muscle img{
+    width: 40px;
+    display: inline;
+}
+
+.age-and-muscle{
+    display: flex;
+    column-gap: 4rem;
+    width: 50%;
+    justify-content: space-between;
+    margin: 60px 0px;
+    position: relative;
+    left: 50%;
+}
+
+.pregnancy-and-race{
+    display: flex;
+    column-gap: 4rem;
+    justify-content: space-between;
+    margin: 60px 0px;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.grid-subheaders{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.grid-subheaders h3{
+    padding: 0px 15px;
+}
+
+.fa-solid{
+    font-size: 2rem;
+}
+
+.fa-bowl-rice{
+    color: rgba(50, 207, 50, 0.726);
+}
+
+.fa-dumbbell{
+    color: var(--top-paragraph);
+}
+
+.fa-bed{
+    color: var(--welcome-background);
+}
+
+.fa-mars-and-venus{
+    color: orangered;
+}
+
+.fa-cake-candles{
+    color: rgb(236, 118, 138);
+}
+
+.fa-baby{
+    color: rgb(153, 117, 70);
+}
+
+.fa-earth-africa{
+    color: var(--welcome-background);
+}
+
+
+
+/* ======================== Media Queries ==================== */
+/* ======================== Mobile Device ==================== */
+@media (max-width:480px){
+    .main-container{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .body-mass-container{
+        display:block;
+        width: 100%;
+    }
+    
+    .header{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .header h1{
+        font-size: 2.4rem;
+        width: 100%;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .header p{
+        text-align: center;
+    }
+    
+    .user-details {
+        width: 100%
+    }
+    
+    .radio label{
+        padding: 0px 15px;
+    }
+    
+    .client-metrics{
+        width: 80%;
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .client-metrics label{
+        font-size: 0.9rem;
+        padding: 10px 0px;
+    }
+    
+    .client-metrics input{
+        padding: 18px 10px;
+    }
+    
+    .calculate-BMI{
+        width: 100%;
+    }
+    
+    .calculate-BMI button{
+        font-size: 1rem;
+    }
+    
+    .calculate-BMI button:active{
+        transform: scale(1.1);
+    }
+    
+    .client-results{
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .client-results h3{
+        color: #fff;
+        padding: 10px 0px;
+    }
+
+    .second-lower{
+        display: block;
+        margin: 60px 0px;
+    }
+    
+    .second-lower .image {
+        width: 100%;
+    }
+
+    
+    .what-your-result-means{
+        width: 100%;
+    }
+    
+    
+    .healthy-tips-grid{
+        margin-top: 100px;
+    }
+    
+    .healthy-tips{
+        display: block;
+    }
+    
+    .limitations-of-BMI{
+        margin-top: 100px;
+        display: block;
+    }
+
+    .gender, .BMI-limitations,.muscle,.pregnancy,.race,.healthy-eating,.regular-exercise,.adequate-sleep {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    
+    
+    .age-and-muscle{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        left: 0%;
+    }
+    
+    .pregnancy-and-race{
+        display: block;
+        margin:0px;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        transform: translate(0%);
+    
+    }
+    
+    .grid-subheaders{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    
+    .grid-subheaders h3{
+        padding: 0px 15px;
+    }
+    
+    .fa-solid{
+        font-size: 2rem;
+    }
+}
+
+/* ======================== Small Tablets ==================== */
+@media (min-width:481px) and (max-width:767px){
+    .main-container{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .body-mass-container{
+        display:block;
+        width: 100%;
+    }
+    
+    .header{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .header h1{
+        font-size: 2.4rem;
+        width: 100%;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .header p{
+        text-align: center;
+    }
+    
+    .user-details {
+        width: 100%
+    }
+    
+    .radio label{
+        padding: 0px 15px;
+    }
+    
+    .client-metrics{
+        width: 80%;
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .client-metrics label{
+        font-size: 0.9rem;
+        padding: 10px 0px;
+    }
+    
+    .client-metrics input{
+        padding: 18px 10px;
+    }
+    
+    .calculate-BMI{
+        width: 100%;
+    }
+    
+    .calculate-BMI button{
+        font-size: 1rem;
+    }
+    
+    .calculate-BMI button:active{
+        transform: scale(1.1);
+    }
+    
+    .client-results{
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .client-results h3{
+        color: #fff;
+        padding: 10px 0px;
+    }
+
+    .second-lower{
+        display: block;
+        margin: 60px 0px;
+    }
+    
+    .second-lower .image {
+        width: 100%;
+    }
+
+    
+    .what-your-result-means{
+        width: 100%;
+    }
+    
+    
+    .healthy-tips-grid{
+        margin-top: 100px;
+    }
+    
+    .healthy-tips{
+        display: block;
+    }
+    
+    .limitations-of-BMI{
+        margin-top: 100px;
+        display: block;
+    }
+
+    .gender, .BMI-limitations,.muscle,.pregnancy,.race,.healthy-eating,.regular-exercise,.adequate-sleep {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    
+    
+    .age-and-muscle{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        position: relative;
+        left: 0%;
+    }
+    
+    .pregnancy-and-race{
+        display: block;
+        margin:0px;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        transform: translate(0%);
+    
+    }
+    
+    .grid-subheaders{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    
+    .grid-subheaders h3{
+        padding: 0px 15px;
+    }
+    
+    .fa-solid{
+        font-size: 2rem;
+    }
+}
+
+/* ======================== Tablets ==================== */
+@media (min-width:767px) and (max-width:991px){
+    .main-container{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .body-mass-container{
+        display:block;
+        width: 100%;
+    }
+    
+    .header{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .header h1{
+        font-size: 2.4rem;
+        width: 100%;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .header p{
+        text-align: center;
+    }
+    
+    .user-details {
+        width: 100%;
+        margin: 80px 0px;
+    }
+    
+    .radio label{
+        padding: 0px 15px;
+    }
+    
+    .client-metrics{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px auto;
+    }
+    
+    .client-metrics label{
+        font-size: 0.9rem;
+        padding: 10px 0px;
+    }
+    
+    .client-metrics input{
+        padding: 20px 10px;
+        width: 100%;
+    }
+    
+    .calculate-BMI{
+        width: 100%;
+    }
+    
+    .calculate-BMI button{
+        font-size: 1rem;
+        padding: 15px 0px;
+    }
+    
+    .calculate-BMI button:active{
+        transform: scale(1.1);
+    }
+    
+    .client-results{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .client-results h3{
+        color: #fff;
+        padding: 10px 0px;
+    }
+
+    .second-lower{
+        margin: 60px 0px;
+    }
+    
+    .second-lower .image {
+        width: 100%;
+    }
+
+    
+    .what-your-result-means{
+        width: 100%;
+    }
+    
+    .healthy-tips-grid h1{
+        text-align: center;
+    }
+    
+    .healthy-tips-grid{
+        margin-top: 100px;
+    }
+    
+    .healthy-tips{
+        display: block;
+    }
+    
+    .limitations-of-BMI{
+        margin-top: 200px;
+        display: flex;
+        gap: 6rem;
+    }
+    
+    .gender{
+        width: 40%;
+    }
+    
+    .BMI-limitations{
+        width: 50%;
+    }
+    
+    .muscle img{
+        width: 40px;
+        display: inline;
+    }
+    
+    .age-and-muscle{
+        display: flex;
+        column-gap: 4rem;
+        width: 90%;
+        justify-content: space-between;
+        margin: 60px 0px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .pregnancy-and-race{
+        display: flex;
+        column-gap: 4rem;
+        justify-content: space-between;
+        margin: 60px 0px;
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    
+    }
+    
+    
+    .grid-subheaders{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    
+    .grid-subheaders h3{
+        padding: 0px 15px;
+    }
+    
+    .fa-solid{
+        font-size: 2rem;
+    }
+}
